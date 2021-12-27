@@ -7,15 +7,15 @@ const refreshToken = require("./refreshToken")
 module.exports = {
 
     
-        "/users": {
+        "/auth": {
           ...login,
 
         },
-        "/users/refreshToken": {
+        "/auth/refreshToken": {
             ...refreshToken
   
           },
-          "/users/logout": {
+          "/auth/logout": {
             ...logout
   
           }
